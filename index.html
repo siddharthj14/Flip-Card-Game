@@ -5,26 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card Flip Game</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <header>Memory Card Game</header>
     <main>
       <div class="container">
-        <div class="card" id="0">💎</div>
-        <div class="card" id="1">🎲</div>
-        <div class="card" id="2">🎭</div>
-        <div class="card" id="3">🌟</div>
-        <div class="card" id="4">🔊</div>
-        <div class="card" id="5">💎</div>
-        <div class="card" id="6">💰</div>
-        <div class="card" id="7">🎀</div>
-        <div class="card" id="8">🔫</div>
-        <div class="card" id="9">🌟</div>
-        <div class="card" id="10">🎀</div>
-        <div class="card" id="11">🎭</div>
-        <div class="card" id="12">💰</div>
-        <div class="card" id="13">🎲</div>
-        <div class="card" id="14">🔫</div>
-        <div class="card" id="15">🔊</div>
+        <div class="grid-container">
+          <button class="card" id="0"></button>
+          <button class="card" id="1"></button>
+          <button class="card" id="2"></button>
+          <button class="card" id="3"></button>
+          <button class="card" id="4"></button>
+          <button class="card" id="5"></button>
+          <button class="card" id="6"></button>
+          <button class="card" id="7"></button>
+          <button class="card" id="8"></button>
+          <button class="card" id="9"></button>
+          <button class="card" id="10"></button>
+          <button class="card" id="11"></button>
+          <button class="card" id="12"></button>
+          <button class="card" id="13"></button>
+          <button class="card" id="14"></button>
+          <button class="card" id="15"></button>
+        </div>
+        <div class="details">
+          <div class="time">
+            Time:
+            <p class="timeCount">0</p>
+          </div>
+          <div class="flips">
+            Flips:
+            <p class="flipsCount">0</p>
+          </div>
+          <button class="refresh">Refresh</button>
+        </div>
       </div>
     </main>
     <script src="index.js"></script>
